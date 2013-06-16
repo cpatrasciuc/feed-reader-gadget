@@ -23,7 +23,11 @@ When it is undocked, the gadget grows in size to allow more information to be di
 
 ### Screenshots
 
-The screenshots are provided by [Softpedia] (http://www.softpedia.com/get/Windows-Widgets/News/Atom-RSS-Feed-Reader.shtml).
+This screenshot is provided by [Radu Ceuca] (http://blog.raduceuca.com/).
+
+![Gadget Flyout](http://blog.raduceuca.com/wp-content/uploads/2007/07/gadget.jpg "Gadget flyout")
+
+These screenshots are provided by [Softpedia] (http://www.softpedia.com/get/Windows-Widgets/News/Atom-RSS-Feed-Reader.shtml).
 
 ![Undocked gadget](http://i1-win.softpedia-static.com/screenshots/Atom-RSS-Feed-Reader_1.png "Undocked gadget")
 
@@ -31,6 +35,4 @@ The screenshots are provided by [Softpedia] (http://www.softpedia.com/get/Window
 
 ![Gadget options](http://i1-win.softpedia-static.com/screenshots/Atom-RSS-Feed-Reader_3.png "Gadget options")
 
-This screenshot is provided by [Radu Ceuca] (http://blog.raduceuca.com/).
 
-![Gadget Flyout](http://blog.raduceuca.com/wp-content/uploads/2007/07/gadget.jpg "Gadget flyout")
