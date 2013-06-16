@@ -1,0 +1,54 @@
+<!-------------------------------------------------
+	Filename:	Gadget.html
+	Author:		Cristian Patrasciuc
+	Email:		cristian.patrasciuc@gmail.com
+	Date:		29-June-2007
+--------------------------------------------------->
+
+<HTML>
+	<HEAD>
+		<TITLE>Feed Reader</TITLE>
+		<LINK href="styles/gadget.css" rel="stylesheet" type="text/css">
+		<LINK href="themes/default/style.css" rel="stylesheet" type="text/css">
+		<SCRIPT language="javascript" src="scripts/gadget.js"></SCRIPT>
+		<SCRIPT>
+			loadTheme();
+		</SCRIPT>
+	</HEAD>
+	
+	<BODY onload="loadTheme(); resizeGadget(); getNews();">
+		<DIV id="gadgetContent">
+			<DIV id="feedTitle">
+				<a href="javascript:void(0);" title="Previous feed" onclick="getPreviousFeed()" class="feedNavigation">&laquo;</a>
+				<a href="javascript:void(0);" title="Click to refresh now" onclick="getNews();" id="titleLink">Feed Reader</a>
+				<a href="javascript:void(0);" title="Next feed" onclick="getNextFeed()" class="feedNavigation">&raquo;</a>
+			</DIV>
+			
+			<DIV class="feedItem" id="0"></DIV>
+			
+			<DIV class="feedItem" id="1"></DIV>
+			
+			<DIV class="feedItem" id="2"></DIV>
+			
+			<DIV class="feedItem" id="3"></DIV>
+			
+			<DIV class="feedItem" id="4" style="display:none;"></DIV>
+			
+			<DIV class="feedItem" id="5" style="display:none;"></DIV>
+			
+			<DIV class="feedItem" id="6" style="display:none;"></DIV>
+			
+			<DIV class="feedItem" id="7" style="display:none;"></DIV>
+			
+			<DIV id="navigation">
+				<a href="javascript:void(0);" id="leftarrow" onclick="previousPage();"></a>
+				<div id="position"></div>
+				<a href="javascript:void(0);" id="rightarrow" onclick="nextPage();"></a>
+			</DIV>
+		</DIV>
+	
+		<DIV name="message" id="message">
+			<p name="messageText" id="messageText">No Feed</p>
+		</DIV>
+	</BODY>
+</HTML>

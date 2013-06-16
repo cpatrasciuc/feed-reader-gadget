@@ -1,0 +1,72 @@
+<!-------------------------------------------------
+	Filename:	Settings.html
+	Author:		Cristian Patrasciuc
+	Email:		cristian.patrasciuc@gmail.com
+	Date:		29-June-2007
+--------------------------------------------------->
+
+<HTML>
+	<HEAD>
+		<LINK href="styles/settings.css" rel="stylesheet" type="text/css">
+		<SCRIPT language="javascript" src="scripts/settings.js"></SCRIPT>
+	</HEAD>
+	
+	<BODY onload="loadSettings()">
+		
+		<a href="javascript:void(0);" onclick="showTable(feedsTable);">Feeds</a> |
+		<a href="javascript:void(0);" onclick="showTable(optionsTable);">Options</a> |
+		<a href="javascript:void(0);" onclick="showTable(aboutTable);">About</a>
+		<div style="height:20px;"></div>
+		
+		<table id="feedsTable">	
+		<tr><td><label for="feeds">Feeds:</label></td>
+		<td><SELECT name="feeds" id="feeds"/></SELECT></td></tr>
+		<tr><td></td><td><input type="button" name="deleteFeed" id="deleteFeed" value="Delete Feed" style="width:auto;" onclick="deleteExistingFeed();"></td></tr>
+		<tr><td><label for="feedName">Feed name:</label></td>
+		<td><input type="text" name="feedName" id="feedName" length="20"/></td></tr>
+		<tr><td><label for="feedURL">Feed URL:</label></td>
+		<td><input type="text" name="feedURL" id="feedURL"/></td></tr>
+	    <tr><td></td><td><input type="button" name="addFeed" id="addFeed" value="Add Feed" style="width:auto;" onclick="addNewFeed( feedName.value, feedURL.value );">
+		<span id="errorMessage"></span></td></tr>
+		<tr><td colspan="2" style="height:15px;"></td></tr>
+		<tr><td></td><td><input type="button" name="importFeeds" id="importFeeds" value="Import Feeds from IE" style="width:auto;" onclick="importFeedsFromIE7();"></td></tr>
+		</table>
+		
+		<table id="optionsTable" style="display:none;">
+		<tr><div id="preview"><img id="previewImage" src="themes/brown/preview.png"></div></tr>
+		<tr><td><label for="feedTheme">Theme:</label></td>
+		<td><SELECT name="feedTheme" id="feedTheme" onchange="updatePreview();">
+				<OPTION value="default" SELECTED>Default</OPTION>
+				<OPTION value="brown">Brown</OPTION>
+				<OPTION value="red">Red</OPTION>
+				<OPTION value="vista">Vista</OPTION>
+		</SELECT></td></tr>
+		<tr><td><label for="feedRefresh">Refresh:</label></td>
+		<td><SELECT name="feedRefresh" id="feedRefresh">
+				<OPTION value="60000">every minute</OPTION>
+				<OPTION value="900000">every 15 minutes</OPTION>
+				<OPTION value="1800000">every 30 minutes</OPTION>
+				<OPTION value="3600000">every 1 hour</OPTION>
+				<OPTION value="-1" SELECTED>only next time the gadget is started</OPTION>
+		</SELECT></td></tr>
+		<tr><td><label for="noItems">Items/page:</label></td>
+		<td><select name="noItems" id="noItems">
+				<option value="4">4</option>
+				<option value="6">6</option>
+				<option value="8">8</option>
+		</select></td></tr>
+		<tr><td></td><td><input type="checkbox" name="autoScrollCheckBox" id="autoScrollCheckBox" style="width:auto;">Auto scroll through feeds</td></tr>
+		</table>
+		
+		<table id="aboutTable" style="display:none;">
+		<tr><td colspan="2">Feed Reader Gadget, v3.0</td></tr>
+		<tr><td colspan="2"><div style="height:20px;"></div></td></tr>
+        <tr><td><STRONG>Author:</STRONG></td><td>Cristian Patrasciuc</td></tr>
+		<tr><td><STRONG>Address:</STRONG></td><td>Str. Andrei Muresanu, Bl. 13, Sc. F, <br>Ap. 118, Bistrita, BN, Romania, <br>Code 420123</td></tr>
+		<tr><td><STRONG>Email:</STRONG></td><td><a href="mailto:cristian.patrasciuc@gmail.com">cristian.patrasciuc@gmail.com</a></td></tr>
+		<tr><td><STRONG>Phone:</STRONG></td><td>(+40) 741 136 230</td></tr>
+		</table>		
+		
+	</BODY>
+</HTML>
+

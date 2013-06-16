@@ -1,0 +1,28 @@
+<!-------------------------------------------------
+	Filename:	Flyout.html
+	Author:		Cristian Patrasciuc
+	Email:		cristian.patrasciuc@gmail.com
+	Date:		14-July-2007
+--------------------------------------------------->
+
+<html>
+<head>
+	<title>Flyout</title>
+	<SCRIPT language="javascript" src="scripts/flyout.js"></SCRIPT>
+</head>
+
+<body onload="initFlyout();" style="width:400; height:209; overflow:auto;">
+	<table style="padding-bottom:10px; width:100%;" cellpadding="0" cellspacing="0">
+		<tr>
+			<td valign="top" id="flyoutTitle" style="font-size:12px; font-weight:bold; float:left; width:65%;"></td>
+			<td valign="top" style="font-size:12px; width:35%; text-align:right;">
+				<a href="javascript:void(0);" style="font-size:12px;text-align:right;" id="flyoutLink">Read more</a> | 
+				<a href="javascript:void(0);" onclick="System.Gadget.Flyout.show = false;">Close [X]</a>
+			</td>
+		</tr>
+	</table>
+	<div style="clear:both;"></div>
+	<div id="flyoutDescription"></div>
+	<div id="flyoutPubDate" style="clear:both; font-size:10px; color:#B0B0B0; margin-top:10px;"></div>
+</body>
+</html>

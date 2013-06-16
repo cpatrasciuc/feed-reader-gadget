@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<gadget>
+    <name>Feed Reader</name>
+    <namespace>Patrasciuc.FeedReaderGadget</namespace>
+    <version>3.0.0.0</version>
+    <author name="Cristian Patrasciuc">
+        <info text="See Settings for email"/>
+        <logo height="160" width="160" src="gadgeticon.png"  />
+    </author>
+    <copyright>&#169; 2007</copyright>
+    <description>A gadget that lets you get a sneak preview of your favorite RSS and Atom feeds around the web.</description>
+    <icons>
+    	<icon height="160" width="160" src="gadgeticon.png" />
+	</icons>
+    <hosts>
+        <host name="sidebar">
+            <base type="HTML" apiVersion="1.0.0" src="Gadget.html" />
+            <permissions>Full</permissions>
+            <platform minPlatformVersion="1.0" />
+        </host>
+    </hosts>
+</gadget>

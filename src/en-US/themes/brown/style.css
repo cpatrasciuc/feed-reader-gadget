@@ -1,0 +1,28 @@
+/**********************************************
+ *	Filename:	style.css
+ *	Author:		Cristian Patrasciuc
+ *	Email:		cristian.patrasciuc@gmail.com
+ *	Date:		08-July-2007
+ **********************************************/
+
+body {
+	color: #B4B4B4;
+	background-image: url('background.png');
+}
+
+#feedTitle a { color: #FFFFFF; }
+
+.feedItemDocked a, 
+.feedItemDocked a:visited, 
+.feedItemDocked a:link,
+.feedItemUndocked a,
+.feedItemUndocked a:visited,
+.feedItemUndocked a:link
+{ color: #FFCC66; }
+
+#leftarrow { background-image: url('leftarrow.png'); }
+#rightarrow { background-image: url('rightarrow.png'); }
+
+#message { background-image: url('message.png'); background-color: #2C160F; }
+#message p { color: #FFCC66; }
+
